@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -18,14 +17,18 @@ export default function Navbar() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
+      <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
-              <Link href="#">
-                <a className="nav-link">Sign In</a>
-              </Link>
+            <Link href="/login">
+              <a className="nav-link">Sign In</a>
+            </Link>
           </li>
-          <li></li>
+          <li className="nav-item">
+            <Link href="/register">
+              <a className="nav-link">Sign Up</a>
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
