@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
       <Link href="/">
-        <a className="navbar-brand">Navbar</a>
+        <a className="navbar-brand">Home</a>
       </Link>
       <button
         className="navbar-toggler"
